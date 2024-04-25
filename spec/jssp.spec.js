@@ -65,12 +65,12 @@ describe("Game object tests", function() {
         });
 
         it("should not move beyond boundary when 'w' key is pressed at the top edge", function() {
-            spaceship.style.top = "8vh"; // Set position near the top boundary
+            spaceship.style.top = "8vh"; // Ensure this is indeed the upper boundary in your game logic
             const event = document.createEvent('Event');
             event.initEvent('keypress', true, true);
             event.key = 'w';
             window.dispatchEvent(event);
-            expect(spaceship.style.top).toEqual("8vh");
+            expect(spaceship.style.top).toEqual("8vh"); // Confirm no movement occurs
         });
     });
 });
