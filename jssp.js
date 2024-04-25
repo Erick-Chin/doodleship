@@ -117,3 +117,5 @@ for(i=0;i<robots.length;i++)
 spaceship = document.querySelector("#player"); //main spaceship
 
 window.addEventListener("keypress",obj.f,false) //keypress event handler
+
+module.exports = obj;
